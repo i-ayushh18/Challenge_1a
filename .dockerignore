@@ -1,0 +1,9 @@
+webapp-next/
+node_modules/
+.git/
+__pycache__/
+*.pdf
+*.json
+*.ipynb
+.DS_Store
+*.log 
