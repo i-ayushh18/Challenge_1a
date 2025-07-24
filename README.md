@@ -264,9 +264,9 @@ graph TD
         G[Logger/Monitor] -- observes --> A
         G -- observes --> F
     end
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style F fill:#bbf,stroke:#333,stroke-width:2px
-    style G fill:#bfb,stroke:#333,stroke-width:2px
+    style A fill:#6a0dad,stroke:#333,stroke-width:2px
+    style F fill:#006400,stroke:#333,stroke-width:2px
+    style G fill:#8b0000,stroke:#333,stroke-width:2px
 ```
 
 - **Strategy Pattern**: See `heading_detector.py` for pluggable detection algorithms
