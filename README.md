@@ -247,18 +247,20 @@ docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --networ
 ### **Design Patterns Used**
 ```mermaid
 graph TD
-    subgraph Strategy Pattern
-        A[HeadingDetector (Context)] -->|uses| B[DetectionStrategy (Interface)]
+    subgraph Strategy_Pattern["Strategy Pattern"]
+        A[HeadingDetector] -->|uses| B[DetectionStrategy]
         B --> C[FontSizeStrategy]
         B --> D[PatternStrategy]
         B --> E[PositionStrategy]
     end
-    subgraph Factory Pattern
+    
+    subgraph Factory_Pattern["Factory Pattern"]
         F[SignalExtractorFactory] --> C
         F --> D
         F --> E
     end
-    subgraph Observer Pattern
+    
+    subgraph Observer_Pattern["Observer Pattern"]
         G[Logger/Monitor] -- observes --> A
         G -- observes --> F
     end
